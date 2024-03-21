@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             GeometryReader { geometry in
-                Image("Moscow")
+                Image(viewModel.city.apiName)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
